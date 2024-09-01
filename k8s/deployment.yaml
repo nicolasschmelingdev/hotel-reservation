@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hotel-reservation-system
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hotel-reservation-system
+  template:
+    metadata:
+      labels:
+        app: hotel-reservation-system
+    spec:
+      containers:
+        - name: hotel-reservation-system
+          image: hotel-reservation-system:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: hotel-config
+                  key: spring.datasource.url
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: hotel-config
+                  key: spring.datasource.username
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: hotel-config
+                  key: spring.datasource.password
+            - name: KAFKA_BOOTSTRAP_SERVERS
+              valueFrom:
+                configMapKeyRef:
+                  name: hotel-config
+                  key: kafka.bootstrap-servers
