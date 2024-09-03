@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hotel-reservation-system
+  name: hotel-reservation
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hotel-reservation-system
+      app: hotel-reservation
   template:
     metadata:
       labels:
-        app: hotel-reservation-system
+        app: hotel-reservation
     spec:
       containers:
-        - name: hotel-reservation-system
-          image: hotel-reservation-system:latest
+        - name: hotel-reservation
+          image: hotel-reservation:latest
           ports:
             - containerPort: 8080
           env:

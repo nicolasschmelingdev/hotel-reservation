@@ -19,7 +19,7 @@ public class CustomerJpaRepositoryImpl implements CustomerJpaRepository {
     }
 
     @Override
-    public List<Customer> findCustomersByCustomCriteria(String name, String email) {
+    public List<Customer> findCustomersByIdAndName(String name, String email) {
         QCustomer customer = QCustomer.customer;
         BooleanExpression predicate = customer.isNotNull();
 

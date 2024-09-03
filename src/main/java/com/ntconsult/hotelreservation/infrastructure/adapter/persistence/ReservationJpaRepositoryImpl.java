@@ -2,7 +2,7 @@ package com.ntconsult.hotelreservation.infrastructure.adapter.persistence;
 
 import com.ntconsult.hotelreservation.domain.model.QReservation;
 import com.ntconsult.hotelreservation.domain.model.Reservation;
-import com.ntconsult.hotelreservation.domain.model.ReservationStatus;
+import com.ntconsult.hotelreservation.domain.model.enums.ReservationStatus;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;

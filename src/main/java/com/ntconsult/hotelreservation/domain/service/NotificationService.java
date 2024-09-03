@@ -1,33 +1,27 @@
+package com.ntconsult.hotelreservation.domain.service;
+
 import com.ntconsult.hotelreservation.domain.model.Notification;
-import com.ntconsult.hotelreservation.domain.model.Reservation;
 import com.ntconsult.hotelreservation.domain.repository.NotificationRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ntconsult.hotelreservation.infrastructure.dto.input.NotificationInputDTO;
+import com.ntconsult.hotelreservation.infrastructure.dto.output.NotificationOutputDTO;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.time.LocalDate;
 
 @Service
-public class NotificationService {
+public class NotificationService extends GenericService<Notification, Long, NotificationInputDTO, NotificationOutputDTO,
+        NotificationRepository> {
 
-    private final NotificationRepository notificationRepository;
+    private final KafkaTemplate<String, Object> kafkaTemplate;
 
-    @Autowired
-    private KafkaTemplate<String, Object> kafkaTemplate;
-
-    public NotificationService(NotificationRepository notificationRepository) {
-        this.notificationRepository = notificationRepository;
+    protected NotificationService(NotificationRepository genericRepository, KafkaTemplate<String, Object> kafkaTemplate) {
+        super(genericRepository);
+        this.kafkaTemplate = kafkaTemplate;
     }
 
-    @Transactional
-    public void sendNotification(Reservation reservation, String message) {
-        Notification notification = new Notification();
-        notification.setReservation(reservation);
-        notification.setMessage(message);
-        notification.setSentDate(LocalDate.now());
-
-        notificationRepository.save(notification);
+    @Override
+    protected void afterInsert(Notification notification) {
         kafkaTemplate.send("reservation-events", notification);
+        super.afterInsert(notification);
     }
+
 }

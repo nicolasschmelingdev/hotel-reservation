@@ -8,5 +8,5 @@ RUN mvn clean package -DskipTests
 # Use uma imagem JRE leve para rodar o artefato
 FROM openjdk:21-jdk-slim
 VOLUME /tmp
-COPY --from=build /app/target/hotel-reservation-system.jar hotel-reservation-system.jar
-ENTRYPOINT ["java","-jar","/hotel-reservation-system.jar"]
+COPY --from=build /app/target/hotel-reservation.jar hotel-reservation.jar
+ENTRYPOINT ["java","-jar","/hotel-reservation.jar"]

@@ -22,11 +22,13 @@ import java.util.Map;
 @EnableKafka
 public class KafkaConfig {
 
+    // Configuração do KafkaTemplate para enviar mensagens
     @Bean
     public KafkaTemplate<String, Object> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
 
+    // Configuração da ProducerFactory para produzir mensagens
     @Bean
     public ProducerFactory<String, Object> producerFactory() {
         Map<String, Object> config = new HashMap<>();
@@ -36,6 +38,7 @@ public class KafkaConfig {
         return new DefaultKafkaProducerFactory<>(config);
     }
 
+    // Configuração da fábrica de listeners de consumidores
     @Bean
     public ConcurrentKafkaListenerContainerFactory<Object, Object> kafkaListenerContainerFactory(
             ConcurrentKafkaListenerContainerFactoryConfigurer configurer,
@@ -46,8 +49,9 @@ public class KafkaConfig {
         return factory;
     }
 
+    // Criação de tópicos no Kafka
     @Bean
-    public NewTopic reservationTopic() {
+    public NewTopic reservationEventsTopic() {
         return new NewTopic("reservation-events", 3, (short) 1);
     }
 }

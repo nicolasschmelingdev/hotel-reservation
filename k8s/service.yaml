@@ -4,7 +4,7 @@ metadata:
   name: hotel-reservation-service
 spec:
   selector:
-    app: hotel-reservation-system
+    app: hotel-reservation
   ports:
     - protocol: TCP
       port: 8080

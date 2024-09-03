@@ -1,49 +1,54 @@
 package com.ntconsult.hotelreservation.domain.service;
 
-import com.ntconsult.hotelreservation.domain.exception.ReservationNotFoundException;
 import com.ntconsult.hotelreservation.domain.model.Reservation;
+import com.ntconsult.hotelreservation.domain.model.enums.ReservationStatus;
 import com.ntconsult.hotelreservation.domain.repository.ReservationRepository;
+import com.ntconsult.hotelreservation.infrastructure.dto.input.IdInputDTO;
+import com.ntconsult.hotelreservation.infrastructure.dto.input.NotificationInputDTO;
+import com.ntconsult.hotelreservation.infrastructure.dto.input.ReservationInputDTO;
+import com.ntconsult.hotelreservation.infrastructure.dto.output.ReservationOutputDTO;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import java.time.LocalDate;
 
 @Service
-public class ReservationService {
+public class ReservationService extends GenericService<Reservation, Long, ReservationInputDTO, ReservationOutputDTO,
+        ReservationRepository> {
 
-    private final ReservationRepository reservationRepository;
+    private final NotificationService notificationService;
 
-    public ReservationService(ReservationRepository reservationRepository) {
-        this.reservationRepository = reservationRepository;
+    protected ReservationService(ReservationRepository genericRepository, NotificationService notificationService) {
+        super(genericRepository);
+        this.notificationService = notificationService;
     }
 
-    @Transactional(readOnly = true)
-    public List<Reservation> searchReservations(Long customerId, Long roomId, String status) {
-        return reservationRepository.findReservationsByCustomCriteria(customerId, roomId, status);
+    @Override
+    protected void afterInsert(Reservation registro) {
+        this.notificationService.create(NotificationInputDTO.builder()
+                .reservation(IdInputDTO.builder()
+                        .id(registro.getId())
+                        .build()
+                )
+                .sentDate(LocalDate.now())
+                .message("Your reservation has been confirmed.")
+                .build());
+
+        super.afterInsert(registro);
     }
 
-    @Transactional(readOnly = true)
-    public Reservation getReservationById(Long id) {
-        return reservationRepository.findById(id).orElseThrow(() -> new ReservationNotFoundException(id));
+    @Override
+    protected void afterUpdate(Reservation registro) {
+        if (registro.getStatus().equals(ReservationStatus.CANCELLED)) {
+            this.notificationService.create(NotificationInputDTO.builder()
+                    .reservation(IdInputDTO.builder()
+                            .id(registro.getId())
+                            .build()
+                    )
+                    .sentDate(LocalDate.now())
+                    .message("Your reservation has been canceled.")
+                    .build());
+        }
+        super.afterUpdate(registro);
     }
 
-    @Transactional
-    public Reservation createReservation(Reservation reservation) {
-        return reservationRepository.save(reservation);
-    }
-
-    @Transactional
-    public Reservation updateReservation(Long id, Reservation reservationDetails) {
-        Reservation reservation = getReservationById(id);
-        reservation.setCheckInDate(reservationDetails.getCheckInDate());
-        reservation.setCheckOutDate(reservationDetails.getCheckOutDate());
-        reservation.setStatus(reservationDetails.getStatus());
-        return reservationRepository.save(reservation);
-    }
-
-    @Transactional
-    public void deleteReservation(Long id) {
-        Reservation reservation = getReservationById(id);
-        reservationRepository.delete(reservation);
-    }
 }
