@@ -33,7 +33,7 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
@@ -48,6 +48,23 @@ services:
       - hotel-net
     volumes:
       - kafka-logs:/var/lib/kafka/logs
+
+  app:
+    build:
+      context: .
+    image: hotel-reservation
+    ports:
+      - "8989:8989"
+    depends_on:
+      - database
+      - kafka
+    networks:
+      - hotel-net
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://database:5432/hotel_reservation_db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=Admin12345
+      - SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092
 
 networks:
   hotel-net:

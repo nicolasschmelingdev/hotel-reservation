@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1725379735389-17" author="nicolas-schmeling">
+        <insert tableName="hotels">
+            <column name="name" value="Hotel California"/>
+            <column name="address" value="42 Sunset Boulevard"/>
+            <column name="city" value="Los Angeles"/>
+            <column name="country" value="USA"/>
+            <column name="max_guests" value="200"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="The Plaza"/>
+            <column name="address" value="768 Fifth Avenue"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="USA"/>
+            <column name="max_guests" value="300"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="The Ritz London"/>
+            <column name="address" value="150 Piccadilly"/>
+            <column name="city" value="London"/>
+            <column name="country" value="UK"/>
+            <column name="max_guests" value="250"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Shangri-La Hotel"/>
+            <column name="address" value="11 Jalan Sultan Ismail"/>
+            <column name="city" value="Kuala Lumpur"/>
+            <column name="country" value="Malaysia"/>
+            <column name="max_guests" value="400"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Marina Bay Sands"/>
+            <column name="address" value="10 Bayfront Avenue"/>
+            <column name="city" value="Singapore"/>
+            <column name="country" value="Singapore"/>
+            <column name="max_guests" value="500"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Burj Al Arab"/>
+            <column name="address" value="Jumeirah Street"/>
+            <column name="city" value="Dubai"/>
+            <column name="country" value="UAE"/>
+            <column name="max_guests" value="200"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Hilton Tokyo"/>
+            <column name="address" value="6-6-2 Nishi-Shinjuku"/>
+            <column name="city" value="Tokyo"/>
+            <column name="country" value="Japan"/>
+            <column name="max_guests" value="300"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Four Seasons Hotel"/>
+            <column name="address" value="57 East 57th Street"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="USA"/>
+            <column name="max_guests" value="350"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Raffles Hotel"/>
+            <column name="address" value="1 Beach Road"/>
+            <column name="city" value="Singapore"/>
+            <column name="country" value="Singapore"/>
+            <column name="max_guests" value="300"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Grand Hyatt"/>
+            <column name="address" value="109 East 42nd Street"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="USA"/>
+            <column name="max_guests" value="250"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="The Peninsula Paris"/>
+            <column name="address" value="19 Avenue Kléber"/>
+            <column name="city" value="Paris"/>
+            <column name="country" value="France"/>
+            <column name="max_guests" value="150"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Mandarin Oriental"/>
+            <column name="address" value="66 Knightsbridge"/>
+            <column name="city" value="London"/>
+            <column name="country" value="UK"/>
+            <column name="max_guests" value="200"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="The Savoy"/>
+            <column name="address" value="Strand"/>
+            <column name="city" value="London"/>
+            <column name="country" value="UK"/>
+            <column name="max_guests" value="250"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Waldorf Astoria"/>
+            <column name="address" value="301 Park Avenue"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="USA"/>
+            <column name="max_guests" value="400"/>
+        </insert>
+        <insert tableName="hotels">
+            <column name="name" value="Taj Mahal Palace"/>
+            <column name="address" value="Apollo Bunder"/>
+            <column name="city" value="Mumbai"/>
+            <column name="country" value="India"/>
+            <column name="max_guests" value="500"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

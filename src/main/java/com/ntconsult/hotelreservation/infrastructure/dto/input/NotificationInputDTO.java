@@ -1,5 +1,6 @@
 package com.ntconsult.hotelreservation.infrastructure.dto.input;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.ntconsult.hotelreservation.infrastructure.dto.GenericDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,6 +15,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class NotificationInputDTO implements Serializable, GenericDto {
+    @JsonIgnore
     private Long id;
     private IdInputDTO reservation;
     private String message;

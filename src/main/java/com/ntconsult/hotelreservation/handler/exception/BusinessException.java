@@ -1,4 +1,4 @@
-package com.ntconsult.hotelreservation.domain.exception;
+package com.ntconsult.hotelreservation.handler.exception;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

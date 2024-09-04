@@ -45,6 +45,12 @@ public class Room implements GenericEntity<Room> {
     @Column(nullable = false)
     private Double price;
 
+    @Column(nullable = false)
+    private Integer beds;
+
+    @Column(nullable = false)
+    private Boolean isAvailable;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "hotel_id", nullable = false)
     private Hotel hotel;

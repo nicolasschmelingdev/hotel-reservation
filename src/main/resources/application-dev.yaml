@@ -2,9 +2,9 @@ spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
   datasource:
-    url: jdbc:postgresql://localhost:5432/hotel_reservation_db
-    username: postgres
-    password: Admin12345
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://database:5432/hotel_reservation_db}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:Admin12345}
     driver-class-name: org.postgresql.Driver
     liquibase:
       change-log: classpath:db/changelog/db.changelog-master.xml
@@ -15,7 +15,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
     consumer:
       group-id: hotel-group
       auto-offset-reset: earliest

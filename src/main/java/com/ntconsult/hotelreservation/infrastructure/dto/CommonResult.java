@@ -55,25 +55,6 @@ public class CommonResult<T> implements Serializable {
         return success(Util.retornaMensagem("obtidos.sucesso"), data, null);
     }
 
-    public static <T> CommonResult<T> success() {
-        return success(Util.retornaMensagem("operacao.sucesso"), null, null);
-    }
-
-    public static <T> CommonResult<T> error(String msg) {
-        CommonResult<T> result = new CommonResult<>();
-        result.setCode(0);
-        result.setMsg(msg);
-        return result;
-    }
-
-    public static <T> CommonResult<T> exception(Integer code, String message) {
-        CommonResult<T> result = new CommonResult<>();
-        result.setCode(code);
-        result.setMsg(message);
-        return result;
-    }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -86,4 +67,5 @@ public class CommonResult<T> implements Serializable {
     public int hashCode() {
         return Objects.hash(code, msg, data);
     }
+    
 }

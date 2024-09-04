@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1725379735389-1" author="nicolas-schmeling">
+        <createTable tableName="amenities">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_amenities"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hotel_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1725379735389-2" author="nicolas-schmeling">
+        <createTable tableName="customers">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_customers"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1725379735389-3" author="nicolas-schmeling">
+        <createTable tableName="hotels">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_hotels"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="average_rating" type="DOUBLE" defaultValue="0.0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="max_guests" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1725379735389-4" author="nicolas-schmeling">
+        <createTable tableName="notifications">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_notifications"/>
+            </column>
+            <column name="reservation_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="message" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sent_date" type="DATE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1725379735389-5" author="nicolas-schmeling">
+        <createTable tableName="reservations">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_reservations"/>
+            </column>
+            <column name="room_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="customer_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="check_in_date" type="DATE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="check_out_date" type="DATE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1725379735389-6" author="nicolas-schmeling">
+        <createTable tableName="reviews">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_reviews"/>
+            </column>
+            <column name="rating" type="DOUBLE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="comment" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hotel_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="customer_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1725379735389-7" author="nicolas-schmeling">
+        <createTable tableName="rooms">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk_rooms"/>
+            </column>
+            <column name="room_number" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="room_type" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="DOUBLE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="beds" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_available" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="hotel_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1725379735389-8" author="nicolas-schmeling">
+        <addUniqueConstraint columnNames="email" constraintName="uc_customers_email" tableName="customers"/>
+    </changeSet>
+    <changeSet id="1725379735389-9" author="nicolas-schmeling">
+        <addForeignKeyConstraint baseColumnNames="hotel_id" baseTableName="amenities"
+                                 constraintName="FK_AMENITIES_ON_HOTEL" referencedColumnNames="id"
+                                 referencedTableName="hotels"/>
+    </changeSet>
+    <changeSet id="1725379735389-10" author="nicolas-schmeling">
+        <addForeignKeyConstraint baseColumnNames="reservation_id" baseTableName="notifications"
+                                 constraintName="FK_NOTIFICATIONS_ON_RESERVATION" referencedColumnNames="id"
+                                 referencedTableName="reservations"/>
+    </changeSet>
+    <changeSet id="1725379735389-11" author="nicolas-schmeling">
+        <addForeignKeyConstraint baseColumnNames="customer_id" baseTableName="reservations"
+                                 constraintName="FK_RESERVATIONS_ON_CUSTOMER" referencedColumnNames="id"
+                                 referencedTableName="customers"/>
+    </changeSet>
+    <changeSet id="1725379735389-12" author="nicolas-schmeling">
+        <addForeignKeyConstraint baseColumnNames="room_id" baseTableName="reservations"
+                                 constraintName="FK_RESERVATIONS_ON_ROOM" referencedColumnNames="id"
+                                 referencedTableName="rooms"/>
+    </changeSet>
+    <changeSet id="1725379735389-13" author="nicolas-schmeling">
+        <addForeignKeyConstraint baseColumnNames="customer_id" baseTableName="reviews"
+                                 constraintName="FK_REVIEWS_ON_CUSTOMER" referencedColumnNames="id"
+                                 referencedTableName="customers"/>
+    </changeSet>
+    <changeSet id="1725379735389-14" author="nicolas-schmeling">
+        <addForeignKeyConstraint baseColumnNames="hotel_id" baseTableName="reviews" constraintName="FK_REVIEWS_ON_HOTEL"
+                                 referencedColumnNames="id" referencedTableName="hotels"/>
+    </changeSet>
+    <changeSet id="1725379735389-15" author="nicolas-schmeling">
+        <addForeignKeyConstraint baseColumnNames="hotel_id" baseTableName="rooms" constraintName="FK_ROOMS_ON_HOTEL"
+                                 referencedColumnNames="id" referencedTableName="hotels"/>
+    </changeSet>
+
+</databaseChangeLog>

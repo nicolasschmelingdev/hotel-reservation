@@ -1,5 +1,6 @@
 package com.ntconsult.hotelreservation.infrastructure.dto.input;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.ntconsult.hotelreservation.domain.model.enums.RoomType;
 import com.ntconsult.hotelreservation.infrastructure.dto.GenericDto;
 import lombok.AllArgsConstructor;
@@ -14,6 +15,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RoomInputDTO implements Serializable, GenericDto {
+    @JsonIgnore
     private Long id;
     private String roomNumber;
     private RoomType roomType;

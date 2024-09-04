@@ -50,4 +50,5 @@ public class Reservation implements GenericEntity<Reservation> {
     @Convert(converter = ReservationStatusConverter.class)
     @Column(nullable = false)
     private ReservationStatus status;
+    
 }

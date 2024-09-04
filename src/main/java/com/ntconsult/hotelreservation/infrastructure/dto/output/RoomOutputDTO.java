@@ -15,5 +15,4 @@ public class RoomOutputDTO {
     private String roomNumber;
     private RoomType roomType;
     private Double price;
-    private HotelOutputDTO hotel;
 }

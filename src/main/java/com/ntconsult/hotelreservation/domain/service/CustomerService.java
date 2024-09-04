@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 public class CustomerService extends GenericService<Customer, Long, CustomerInputDTO, CustomerOutputDTO,
         CustomerRepository> {
 
-
     protected CustomerService(CustomerRepository genericRepository) {
         super(genericRepository);
     }

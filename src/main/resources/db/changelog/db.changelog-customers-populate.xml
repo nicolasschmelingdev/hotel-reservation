@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    
+    <changeSet id="1725379735389-16" author="nicolas-schmeling">
+        <insert tableName="customers">
+            <column name="name" value="John Doe"/>
+            <column name="email" value="john.doe@example.com"/>
+            <column name="phone" value="123-456-7890"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Jane Smith"/>
+            <column name="email" value="jane.smith@example.com"/>
+            <column name="phone" value="234-567-8901"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Michael Brown"/>
+            <column name="email" value="michael.brown@example.com"/>
+            <column name="phone" value="345-678-9012"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Emily Davis"/>
+            <column name="email" value="emily.davis@example.com"/>
+            <column name="phone" value="456-789-0123"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Chris Johnson"/>
+            <column name="email" value="chris.johnson@example.com"/>
+            <column name="phone" value="567-890-1234"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Jessica Wilson"/>
+            <column name="email" value="jessica.wilson@example.com"/>
+            <column name="phone" value="678-901-2345"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="David Lee"/>
+            <column name="email" value="david.lee@example.com"/>
+            <column name="phone" value="789-012-3456"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Laura Miller"/>
+            <column name="email" value="laura.miller@example.com"/>
+            <column name="phone" value="890-123-4567"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Daniel Martinez"/>
+            <column name="email" value="daniel.martinez@example.com"/>
+            <column name="phone" value="901-234-5678"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Sarah Garcia"/>
+            <column name="email" value="sarah.garcia@example.com"/>
+            <column name="phone" value="012-345-6789"/>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>

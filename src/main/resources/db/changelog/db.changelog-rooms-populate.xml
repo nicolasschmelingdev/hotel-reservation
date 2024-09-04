@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="insert-rooms" author="nicolas-schmeling">
+        <sql>
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (1, '101', 3, 250, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (2, '102', 1, 250, 3, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (3, '103', 1, 300, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (4, '104', 2, 250, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (5, '105', 3, 300, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (6, '106', 1, 250, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (7, '107', 2, 150, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (8, '108', 2, 300, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (9, '109', 1, 300, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (10, '110', 3, 250, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (11, '111', 2, 150, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (12, '112', 2, 250, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (13, '113', 3, 250, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (14, '114', 2, 250, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (15, '115', 2, 300, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (16, '116', 1, 250, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (17, '117', 3, 200, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (18, '118', 2, 300, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (19, '119', 2, 150, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (20, '120', 3, 200, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (21, '121', 3, 300, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (22, '122', 1, 300, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (23, '123', 1, 250, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (24, '124', 1, 150, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (25, '125', 2, 250, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (26, '126', 1, 200, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (27, '127', 1, 250, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (28, '128', 1, 200, 3, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (29, '129', 3, 200, 3, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (30, '130', 2, 150, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (31, '131', 1, 200, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (32, '132', 1, 200, 2, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (33, '133', 2, 150, 3, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (34, '134', 1, 200, 1, true, 1);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (35, '135', 2, 150, 3, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (36, '136', 3, 300, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (37, '137', 3, 150, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (38, '138', 3, 250, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (39, '139', 3, 250, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (40, '140', 1, 300, 3, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (41, '141', 2, 150, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (42, '142', 2, 250, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (43, '143', 1, 200, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (44, '144', 1, 300, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (45, '145', 3, 150, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (46, '146', 1, 150, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (47, '147', 1, 150, 3, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (48, '148', 3, 150, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (49, '149', 3, 250, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (50, '150', 3, 250, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (51, '151', 2, 250, 3, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (52, '152', 1, 150, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (53, '153', 2, 300, 3, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (54, '154', 2, 150, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (55, '155', 2, 150, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (56, '156', 1, 250, 3, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (57, '157', 2, 300, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (58, '158', 2, 300, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (59, '159', 2, 200, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (60, '160', 1, 300, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (61, '161', 3, 200, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (62, '162', 3, 250, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (63, '163', 2, 300, 3, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (64, '164', 3, 300, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (65, '165', 2, 300, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (66, '166', 2, 150, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (67, '167', 1, 250, 2, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (68, '168', 3, 250, 1, true, 2);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (69, '169', 1, 200, 1, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (70, '170', 3, 300, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (71, '171', 3, 300, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (72, '172', 2, 300, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (73, '173', 1, 200, 1, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (74, '174', 2, 150, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (75, '175', 2, 250, 1, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (76, '176', 3, 300, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (77, '177', 1, 150, 1, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (78, '178', 3, 150, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (79, '179', 1, 150, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (80, '180', 3, 250, 1, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (81, '181', 2, 150, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (82, '182', 1, 200, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (83, '183', 2, 250, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (84, '184', 3, 200, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (85, '185', 3, 200, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (86, '186', 3, 300, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (87, '187', 3, 250, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (88, '188', 1, 150, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (89, '189', 3, 150, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (90, '190', 3, 200, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (91, '191', 2, 200, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (92, '192', 1, 250, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (93, '193', 1, 300, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (94, '194', 2, 200, 1, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (95, '195', 1, 250, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (96, '196', 1, 150, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (97, '197', 3, 200, 1, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (98, '198', 3, 250, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (99, '199', 3, 200, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (100, '200', 2, 200, 1, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (101, '201', 2, 200, 3, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (102, '202', 3, 150, 2, true, 3);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (103, '203', 2, 150, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (104, '204', 2, 150, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (105, '205', 3, 300, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (106, '206', 1, 150, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (107, '207', 1, 200, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (108, '208', 3, 200, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (109, '209', 1, 250, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (110, '210', 2, 250, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (111, '211', 3, 250, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (112, '212', 1, 200, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (113, '213', 1, 250, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (114, '214', 1, 300, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (115, '215', 2, 200, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (116, '216', 1, 150, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (117, '217', 1, 150, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (118, '218', 3, 150, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (119, '219', 2, 200, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (120, '220', 3, 150, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (121, '221', 1, 300, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (122, '222', 3, 200, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (123, '223', 1, 250, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (124, '224', 3, 300, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (125, '225', 1, 300, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (126, '226', 1, 300, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (127, '227', 1, 200, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (128, '228', 2, 300, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (129, '229', 1, 250, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (130, '230', 1, 250, 2, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (131, '231', 1, 150, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (132, '232', 2, 250, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (133, '233', 1, 150, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (134, '234', 1, 250, 1, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (135, '235', 1, 300, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (136, '236', 3, 250, 3, true, 4);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (137, '237', 1, 150, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (138, '238', 1, 150, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (139, '239', 3, 300, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (140, '240', 2, 250, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (141, '241', 1, 250, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (142, '242', 1, 200, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (143, '243', 2, 250, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (144, '244', 1, 150, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (145, '245', 1, 250, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (146, '246', 1, 250, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (147, '247', 1, 150, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (148, '248', 2, 150, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (149, '249', 1, 250, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (150, '250', 2, 200, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (151, '251', 3, 150, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (152, '252', 3, 250, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (153, '253', 2, 200, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (154, '254', 2, 200, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (155, '255', 3, 300, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (156, '256', 2, 200, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (157, '257', 1, 150, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (158, '258', 1, 200, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (159, '259', 2, 300, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (160, '260', 1, 150, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (161, '261', 3, 150, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (162, '262', 2, 150, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (163, '263', 2, 300, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (164, '264', 3, 150, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (165, '265', 3, 200, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (166, '266', 1, 250, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (167, '267', 1, 300, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (168, '268', 1, 150, 2, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (169, '269', 2, 200, 1, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (170, '270', 1, 250, 3, true, 5);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (171, '271', 1, 250, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (172, '272', 3, 250, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (173, '273', 2, 300, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (174, '274', 1, 250, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (175, '275', 3, 250, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (176, '276', 2, 200, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (177, '277', 2, 250, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (178, '278', 3, 150, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (179, '279', 1, 150, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (180, '280', 2, 150, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (181, '281', 1, 200, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (182, '282', 3, 150, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (183, '283', 3, 150, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (184, '284', 3, 300, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (185, '285', 1, 300, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (186, '286', 2, 200, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (187, '287', 1, 200, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (188, '288', 1, 300, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (189, '289', 1, 150, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (190, '290', 3, 150, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (191, '291', 1, 150, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (192, '292', 2, 200, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (193, '293', 1, 200, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (194, '294', 1, 250, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (195, '295', 1, 250, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (196, '296', 1, 200, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (197, '297', 1, 150, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (198, '298', 2, 150, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (199, '299', 3, 250, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (200, '300', 3, 300, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (201, '301', 2, 300, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (202, '302', 3, 150, 2, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (203, '303', 1, 150, 1, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (204, '304', 3, 300, 3, true, 6);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (205, '305', 1, 200, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (206, '306', 1, 150, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (207, '307', 3, 300, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (208, '308', 2, 200, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (209, '309', 3, 300, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (210, '310', 1, 200, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (211, '311', 1, 300, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (212, '312', 3, 150, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (213, '313', 2, 200, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (214, '314', 1, 300, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (215, '315', 2, 250, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (216, '316', 3, 250, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (217, '317', 3, 300, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (218, '318', 1, 250, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (219, '319', 2, 200, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (220, '320', 2, 150, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (221, '321', 2, 150, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (222, '322', 1, 300, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (223, '323', 1, 300, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (224, '324', 3, 250, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (225, '325', 1, 250, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (226, '326', 2, 300, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (227, '327', 3, 300, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (228, '328', 1, 300, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (229, '329', 1, 150, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (230, '330', 2, 300, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (231, '331', 1, 150, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (232, '332', 2, 200, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (233, '333', 2, 200, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (234, '334', 2, 300, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (235, '335', 3, 300, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (236, '336', 2, 250, 1, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (237, '337', 1, 300, 3, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (238, '338', 2, 150, 2, true, 7);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (239, '339', 3, 300, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (240, '340', 1, 250, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (241, '341', 1, 300, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (242, '342', 2, 150, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (243, '343', 2, 250, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (244, '344', 3, 300, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (245, '345', 1, 150, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (246, '346', 1, 250, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (247, '347', 2, 150, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (248, '348', 3, 150, 1, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (249, '349', 3, 150, 1, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (250, '350', 1, 150, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (251, '351', 1, 250, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (252, '352', 3, 200, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (253, '353', 1, 150, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (254, '354', 3, 150, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (255, '355', 2, 200, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (256, '356', 3, 150, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (257, '357', 1, 300, 1, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (258, '358', 2, 250, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (259, '359', 2, 200, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (260, '360', 3, 300, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (261, '361', 1, 150, 1, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (262, '362', 1, 250, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (263, '363', 3, 200, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (264, '364', 2, 300, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (265, '365', 2, 200, 1, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (266, '366', 2, 250, 1, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (267, '367', 1, 150, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (268, '368', 3, 200, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (269, '369', 1, 250, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (270, '370', 1, 200, 1, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (271, '371', 2, 150, 3, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (272, '372', 2, 250, 2, true, 8);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (273, '373', 2, 200, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (274, '374', 3, 150, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (275, '375', 1, 250, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (276, '376', 2, 150, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (277, '377', 3, 300, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (278, '378', 2, 300, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (279, '379', 3, 300, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (280, '380', 3, 300, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (281, '381', 3, 250, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (282, '382', 2, 150, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (283, '383', 1, 300, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (284, '384', 3, 300, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (285, '385', 1, 250, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (286, '386', 2, 200, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (287, '387', 2, 250, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (288, '388', 3, 250, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (289, '389', 3, 200, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (290, '390', 1, 150, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (291, '391', 2, 250, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (292, '392', 2, 250, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (293, '393', 2, 300, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (294, '394', 3, 200, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (295, '395', 3, 300, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (296, '396', 2, 200, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (297, '397', 2, 300, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (298, '398', 2, 300, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (299, '399', 2, 250, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (300, '400', 1, 300, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (301, '401', 2, 200, 2, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (302, '402', 3, 150, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (303, '403', 1, 300, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (304, '404', 2, 300, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (305, '405', 1, 150, 3, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (306, '406', 3, 250, 1, true, 9);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (307, '407', 3, 150, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (308, '408', 1, 200, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (309, '409', 1, 200, 3, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (310, '410', 3, 150, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (311, '411', 3, 300, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (312, '412', 2, 300, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (313, '413', 1, 150, 3, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (314, '414', 2, 300, 3, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (315, '415', 2, 300, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (316, '416', 3, 250, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (317, '417', 1, 300, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (318, '418', 1, 300, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (319, '419', 3, 150, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (320, '420', 3, 200, 3, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (321, '421', 3, 250, 3, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (322, '422', 2, 300, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (323, '423', 3, 300, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (324, '424', 2, 300, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (325, '425', 2, 150, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (326, '426', 1, 250, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (327, '427', 3, 150, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (328, '428', 2, 150, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (329, '429', 2, 200, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (330, '430', 3, 300, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (331, '431', 1, 300, 3, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (332, '432', 3, 150, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (333, '433', 1, 200, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (334, '434', 3, 150, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (335, '435', 3, 200, 1, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (336, '436', 2, 200, 3, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (337, '437', 3, 250, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (338, '438', 3, 300, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (339, '439', 3, 200, 2, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (340, '440', 3, 150, 3, true, 10);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (341, '441', 1, 300, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (342, '442', 1, 200, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (343, '443', 3, 200, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (344, '444', 2, 200, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (345, '445', 1, 200, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (346, '446', 3, 300, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (347, '447', 1, 300, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (348, '448', 2, 250, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (349, '449', 1, 300, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (350, '450', 2, 150, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (351, '451', 2, 150, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (352, '452', 2, 150, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (353, '453', 1, 200, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (354, '454', 1, 300, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (355, '455', 1, 250, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (356, '456', 3, 250, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (357, '457', 1, 200, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (358, '458', 3, 250, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (359, '459', 1, 200, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (360, '460', 1, 300, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (361, '461', 2, 150, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (362, '462', 1, 200, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (363, '463', 1, 300, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (364, '464', 1, 150, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (365, '465', 3, 250, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (366, '466', 3, 150, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (367, '467', 2, 250, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (368, '468', 3, 300, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (369, '469', 2, 300, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (370, '470', 2, 150, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (371, '471', 1, 150, 1, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (372, '472', 1, 150, 2, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (373, '473', 1, 300, 3, true, 11);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (374, '474', 1, 250, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (375, '475', 1, 150, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (376, '476', 1, 200, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (377, '477', 3, 150, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (378, '478', 1, 250, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (379, '479', 2, 200, 1, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (380, '480', 1, 200, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (381, '481', 1, 300, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (382, '482', 3, 200, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (383, '483', 1, 300, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (384, '484', 3, 150, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (385, '485', 1, 150, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (386, '486', 3, 150, 1, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (387, '487', 1, 200, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (388, '488', 2, 200, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (389, '489', 1, 300, 1, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (390, '490', 3, 150, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (391, '491', 2, 150, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (392, '492', 1, 300, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (393, '493', 1, 200, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (394, '494', 2, 250, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (395, '495', 1, 150, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (396, '496', 1, 200, 1, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (397, '497', 1, 300, 1, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (398, '498', 1, 150, 1, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (399, '499', 1, 300, 3, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (400, '500', 3, 200, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (401, '501', 1, 250, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (402, '502', 2, 150, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (403, '503', 3, 150, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (404, '504', 2, 300, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (405, '505', 1, 300, 2, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (406, '506', 1, 250, 1, true, 12);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (407, '507', 1, 150, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (408, '508', 1, 300, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (409, '509', 2, 250, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (410, '510', 1, 250, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (411, '511', 1, 300, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (412, '512', 2, 250, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (413, '513', 3, 200, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (414, '514', 1, 300, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (415, '515', 1, 250, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (416, '516', 3, 250, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (417, '517', 3, 150, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (418, '518', 2, 300, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (419, '519', 2, 200, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (420, '520', 1, 300, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (421, '521', 1, 300, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (422, '522', 2, 300, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (423, '523', 1, 250, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (424, '524', 1, 200, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (425, '525', 2, 300, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (426, '526', 3, 300, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (427, '527', 1, 200, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (428, '528', 3, 200, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (429, '529', 3, 250, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (430, '530', 3, 300, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (431, '531', 3, 250, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (432, '532', 1, 300, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (433, '533', 2, 300, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (434, '534', 1, 200, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (435, '535', 3, 250, 1, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (436, '536', 1, 200, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (437, '537', 2, 250, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (438, '538', 1, 150, 2, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (439, '539', 1, 150, 3, true, 13);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (440, '540', 2, 200, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (441, '541', 1, 250, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (442, '542', 2, 250, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (443, '543', 2, 200, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (444, '544', 1, 300, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (445, '545', 1, 200, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (446, '546', 1, 150, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (447, '547', 2, 250, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (448, '548', 3, 200, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (449, '549', 2, 300, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (450, '550', 2, 300, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (451, '551', 2, 250, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (452, '552', 1, 300, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (453, '553', 3, 250, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (454, '554', 3, 250, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (455, '555', 3, 200, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (456, '556', 3, 150, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (457, '557', 3, 200, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (458, '558', 2, 250, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (459, '559', 1, 200, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (460, '560', 3, 150, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (461, '561', 2, 300, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (462, '562', 2, 250, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (463, '563', 3, 200, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (464, '564', 2, 250, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (465, '565', 2, 250, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (466, '566', 1, 150, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (467, '567', 1, 200, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (468, '568', 3, 250, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (469, '569', 3, 150, 1, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (470, '570', 2, 250, 3, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (471, '571', 2, 250, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (472, '572', 3, 300, 2, true, 14);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (473, '573', 2, 150, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (474, '574', 3, 150, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (475, '575', 2, 150, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (476, '576', 1, 150, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (477, '577', 2, 200, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (478, '578', 1, 300, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (479, '579', 2, 150, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (480, '580', 3, 150, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (481, '581', 2, 300, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (482, '582', 2, 200, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (483, '583', 3, 300, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (484, '584', 2, 300, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (485, '585', 2, 200, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (486, '586', 2, 300, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (487, '587', 1, 250, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (488, '588', 1, 300, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (489, '589', 3, 150, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (490, '590', 3, 200, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (491, '591', 2, 300, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (492, '592', 3, 300, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (493, '593', 2, 250, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (494, '594', 2, 200, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (495, '595', 2, 250, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (496, '596', 1, 200, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (497, '597', 2, 200, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (498, '598', 2, 200, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (499, '599', 2, 250, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (500, '600', 3, 250, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (501, '601', 1, 200, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (502, '602', 2, 250, 3, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (503, '603', 1, 250, 2, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (504, '604', 3, 150, 1, true, 15);
+            INSERT INTO public.rooms (id, room_number, room_type, price, beds, is_available, hotel_id)
+            VALUES (505, '605', 3, 200, 3, true, 15);
+
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

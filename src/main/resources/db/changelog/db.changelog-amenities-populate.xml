@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="insert-rooms" author="nicolas-schmeling">
+        <sql>
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (1, 'Non-Smoking Rooms', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (2, 'Electric Vehicle Charging Station', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (3, 'Spa', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (4, 'Free Wi-Fi', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (5, 'Swimming Pool', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (6, 'Conference Rooms', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (7, 'Parking', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (8, 'Restaurant', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (9, '24-Hour Reception', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (10, 'Bar', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (11, 'Air Conditioning', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (12, 'Breakfast Included', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (13, 'Wheelchair Accessible', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (14, 'Pet Friendly', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (15, 'Laundry Service', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (16, 'Gym', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (17, 'Business Center', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (18, 'Room Service', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (19, 'Mini Bar', 1);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (20, 'Non-Smoking Rooms', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (21, 'Electric Vehicle Charging Station', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (22, 'Spa', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (23, 'Free Wi-Fi', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (24, 'Swimming Pool', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (25, 'Parking', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (26, 'Conference Rooms', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (27, 'Airport Shuttle', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (28, 'Restaurant', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (29, 'Bar', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (30, '24-Hour Reception', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (31, 'Air Conditioning', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (32, 'Breakfast Included', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (33, 'Wheelchair Accessible', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (34, 'Pet Friendly', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (35, 'Gym', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (36, 'Laundry Service', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (37, 'Business Center', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (38, 'Room Service', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (39, 'Mini Bar', 2);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (40, 'Restaurant', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (41, '24-Hour Reception', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (42, 'Bar', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (43, 'Non-Smoking Rooms', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (44, 'Spa', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (45, 'Pet Friendly', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (46, 'Gym', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (47, 'Laundry Service', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (48, 'Room Service', 3);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (49, 'Restaurant', 4);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (50, 'Non-Smoking Rooms', 4);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (51, 'Wheelchair Accessible', 4);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (52, 'Spa', 4);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (53, 'Parking', 4);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (54, 'Laundry Service', 4);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (55, 'Business Center', 4);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (56, 'Airport Shuttle', 4);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (57, 'Non-Smoking Rooms', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (58, 'Electric Vehicle Charging Station', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (59, 'Spa', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (60, 'Free Wi-Fi', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (61, 'Conference Rooms', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (62, 'Parking', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (63, 'Airport Shuttle', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (64, 'Restaurant', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (65, '24-Hour Reception', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (66, 'Air Conditioning', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (67, 'Breakfast Included', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (68, 'Wheelchair Accessible', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (69, 'Pet Friendly', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (70, 'Gym', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (71, 'Laundry Service', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (72, 'Business Center', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (73, 'Room Service', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (74, 'Mini Bar', 5);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (75, 'Non-Smoking Rooms', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (76, 'Electric Vehicle Charging Station', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (77, 'Spa', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (78, 'Free Wi-Fi', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (79, 'Swimming Pool', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (80, 'Conference Rooms', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (81, 'Parking', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (82, 'Airport Shuttle', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (83, 'Restaurant', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (84, 'Bar', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (85, '24-Hour Reception', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (86, 'Air Conditioning', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (87, 'Breakfast Included', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (88, 'Wheelchair Accessible', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (89, 'Pet Friendly', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (90, 'Laundry Service', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (91, 'Gym', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (92, 'Business Center', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (93, 'Room Service', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (94, 'Mini Bar', 6);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (95, 'Non-Smoking Rooms', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (96, 'Electric Vehicle Charging Station', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (97, 'Swimming Pool', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (98, 'Parking', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (99, 'Conference Rooms', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (100, 'Airport Shuttle', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (101, 'Restaurant', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (102, 'Bar', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (103, '24-Hour Reception', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (104, 'Air Conditioning', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (105, 'Breakfast Included', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (106, 'Pet Friendly', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (107, 'Gym', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (108, 'Business Center', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (109, 'Room Service', 7);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (110, 'Restaurant', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (111, '24-Hour Reception', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (112, 'Electric Vehicle Charging Station', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (113, 'Wheelchair Accessible', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (114, 'Spa', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (115, 'Swimming Pool', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (116, 'Conference Rooms', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (117, 'Gym', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (118, 'Business Center', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (119, 'Airport Shuttle', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (120, 'Room Service', 8);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (121, 'Non-Smoking Rooms', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (122, 'Electric Vehicle Charging Station', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (123, 'Spa', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (124, 'Free Wi-Fi', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (125, 'Swimming Pool', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (126, 'Parking', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (127, 'Conference Rooms', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (128, 'Airport Shuttle', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (129, 'Bar', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (130, 'Breakfast Included', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (131, 'Air Conditioning', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (132, 'Laundry Service', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (133, 'Business Center', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (134, 'Room Service', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (135, 'Mini Bar', 9);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (136, 'Restaurant', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (137, 'Bar', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (138, 'Non-Smoking Rooms', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (139, 'Electric Vehicle Charging Station', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (140, 'Breakfast Included', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (141, 'Free Wi-Fi', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (142, 'Swimming Pool', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (143, 'Pet Friendly', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (144, 'Gym', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (145, 'Room Service', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (146, 'Airport Shuttle', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (147, 'Mini Bar', 10);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (148, 'Non-Smoking Rooms', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (149, 'Electric Vehicle Charging Station', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (150, 'Spa', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (151, 'Swimming Pool', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (152, 'Conference Rooms', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (153, 'Parking', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (154, 'Airport Shuttle', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (155, 'Restaurant', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (156, '24-Hour Reception', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (157, 'Bar', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (158, 'Air Conditioning', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (159, 'Breakfast Included', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (160, 'Wheelchair Accessible', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (161, 'Pet Friendly', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (162, 'Gym', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (163, 'Laundry Service', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (164, 'Business Center', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (165, 'Room Service', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (166, 'Mini Bar', 11);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (167, 'Restaurant', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (168, 'Bar', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (169, 'Electric Vehicle Charging Station', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (170, 'Wheelchair Accessible', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (171, 'Spa', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (172, 'Laundry Service', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (173, 'Gym', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (174, 'Airport Shuttle', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (175, 'Room Service', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (176, 'Mini Bar', 12);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (177, 'Non-Smoking Rooms', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (178, 'Electric Vehicle Charging Station', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (179, 'Free Wi-Fi', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (180, 'Swimming Pool', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (181, 'Parking', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (182, 'Conference Rooms', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (183, 'Airport Shuttle', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (184, 'Restaurant', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (185, 'Bar', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (186, 'Air Conditioning', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (187, 'Pet Friendly', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (188, 'Business Center', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (189, 'Room Service', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (190, 'Mini Bar', 13);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (191, 'Restaurant', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (192, 'Bar', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (193, 'Breakfast Included', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (194, 'Spa', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (195, 'Swimming Pool', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (196, 'Conference Rooms', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (197, 'Parking', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (198, 'Business Center', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (199, 'Room Service', 14);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (200, 'Restaurant', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (201, '24-Hour Reception', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (202, 'Non-Smoking Rooms', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (203, 'Electric Vehicle Charging Station', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (204, 'Breakfast Included', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (205, 'Spa', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (206, 'Swimming Pool', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (207, 'Laundry Service', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (208, 'Gym', 15);
+            INSERT INTO public.amenities (id, name, hotel_id)
+            VALUES (209, 'Business Center', 15);
+        </sql>
+    </changeSet>
+</databaseChangeLog>

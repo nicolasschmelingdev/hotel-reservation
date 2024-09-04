@@ -11,5 +11,9 @@ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
     <property name="autoIncrement" value="true" dbms="${dbmsAutoIncrement}"/>
     <property name="autoIncrement" value="false" dbms="${dbmsSequence}"/>
 
-    <include file="/db/changelog/db.changelog-0.0.1.xml"/>
+    <include file="/db/changelog/db.changelog-tables.xml"/>
+    <include file="/db/changelog/db.changelog-customers-populate.xml"/>
+    <include file="/db/changelog/db.changelog-hotels-populate.xml"/>
+    <include file="/db/changelog/db.changelog-rooms-populate.xml"/>
+    <include file="/db/changelog/db.changelog-amenities-populate.xml"/>
 </databaseChangeLog>
