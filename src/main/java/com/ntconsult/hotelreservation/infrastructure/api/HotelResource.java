@@ -45,12 +45,15 @@ public class HotelResource extends GenericResource<Hotel, Long, HotelInputDTO, H
     public CommonResult<PageResult<HotelOutputDTO>> listRecords(
             @Join(path = "amenities", alias = "am")
             @Join(path = "reviews", alias = "re", type = JoinType.LEFT)
+            @Join(path = "rooms", alias = "ro")
             @Join(path = "re.customer", alias = "cr")
             @Conjunction({
-                    @Or(@Spec(path = "pricePerNight", params = {"pricePerNightStart", "pricePerNightEnd"}, spec = Between.class)),
                     @Or(@Spec(path = "address", params = "address", spec = LikeIgnoreCase.class)),
                     @Or(@Spec(path = "city", params = "city", spec = LikeIgnoreCase.class)),
                     @Or(@Spec(path = "country", params = "country", spec = LikeIgnoreCase.class)),
+                    @Or(@Spec(path = "averageRating", params = "averageRating", spec = GreaterThanOrEqual.class)),
+                    @Or(@Spec(path = "ro.price", params = {"roomPrinceMin", "roomPriceMax"}, spec =
+                            Between.class)),
                     @Or(@Spec(path = "re.rating", params = "reviewRating", spec = GreaterThanOrEqual.class)),
                     @Or(@Spec(path = "cr.name", params = "customerReview", spec = LikeIgnoreCase.class)),
                     @Or(@Spec(path = "am.name", params = "amenitiesName", spec = LikeIgnoreCase.class))
